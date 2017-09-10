@@ -27,9 +27,10 @@
 				echo ('</li></ul>');
 		} else { ?>
 			<ul class="credit" role="contentinfo">
-				<li class="copyright">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo(); ?></a></li>
-				<li class="wp-credit"><?php _e('Proudly powered by', 'moka') ?> <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'moka' ) ); ?>" ><?php _e('WordPress.', 'moka') ?></a></li>
-				<li><?php printf( __( 'Theme: %1$s by %2$s', 'moka' ), 'Moka', '<a href="https://www.elmastudio.de/en/" title="Elmastudio WordPress Themes">Elmastudio</a>' ); ?></li>
+<!--				<li class="copyright">&copy; --><?php //echo date('Y'); ?><!-- <a href="--><?php //echo home_url( '/' ); ?><!--">--><?php //bloginfo(); ?><!--</a></li>-->
+                    <li class="copyright"><?php esc_html_e( '&copy;' ); echo ' 2015-' . date('Y') . ' ' . 'b-side by Donny';  ?>.</li>
+<!--				<li class="wp-credit">--><?php //_e('Proudly powered by', 'moka') ?><!-- <a href="--><?php //echo esc_url( __( 'https://wordpress.org/', 'moka' ) ); ?><!--" >--><?php //_e('WordPress.', 'moka') ?><!--</a></li>-->
+<!--				<li>--><?php //printf( __( 'Theme: %1$s by %2$s', 'moka' ), 'Moka', '<a href="https://www.elmastudio.de/en/" title="Elmastudio WordPress Themes">Elmastudio</a>' ); ?><!--</li>-->
 			</ul><!-- end .credit -->
 		<?php } ?>
 
